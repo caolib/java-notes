@@ -19,6 +19,7 @@ public class ParityII {
                     even.add(nums[i]);
                 } else {
                     odd.add(nums[i]);
+
                 }
             }
         }

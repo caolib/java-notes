@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java项目.iml" filepath="$PROJECT_DIR$/Java项目.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java类和对象/java类和对象.iml" filepath="$PROJECT_DIR$/java类和对象/java类和对象.iml" />
+      <module fileurl="file://$PROJECT_DIR$/力扣题目/力扣题目.iml" filepath="$PROJECT_DIR$/力扣题目/力扣题目.iml" />
+    </modules>
+  </component>
+</project>
