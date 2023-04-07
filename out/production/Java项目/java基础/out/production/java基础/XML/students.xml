@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--xml是一种可扩展的标记语言-->
+<students>
+    <student id="stu001">
+        <name>鲲鲲</name>
+        <age>18</age>
+        <address>上海</address>
+    </student>
+
+    <student id="stu002">
+        <name>ikun</name>
+        <age>20</age>
+        <address>北京</address>
+    </student>
+
+</students>

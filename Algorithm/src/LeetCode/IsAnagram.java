@@ -1,7 +1,6 @@
-package LeetCode;
+package Algorithm.src.LeetCode;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class IsAnagram {
     public static void main(String[] args) {
