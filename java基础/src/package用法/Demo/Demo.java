@@ -1,6 +1,6 @@
 package java基础.src.package用法.Demo;
 
-import package用法.ikun.Kun;
+import java基础.src.package用法.ikun.Kun;
 
 public class Demo {
     public static void main(String[] args) {
