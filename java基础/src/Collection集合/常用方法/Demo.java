@@ -48,7 +48,7 @@ public class Demo {
         System.out.println(c.isEmpty());
         System.out.println("-------------");
 
-        //6、集合的长度 size
+        //6、集合的长度 size()
         c.add("ikun");
         c.add("ikun");
         c.add("ikun");
