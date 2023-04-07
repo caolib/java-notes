@@ -1,4 +1,4 @@
-package 抽象类.抽象类;
+package java基础.src.抽象类.抽象类;
 
 /**
 abstract 抽象关键字

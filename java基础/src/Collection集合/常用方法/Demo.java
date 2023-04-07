@@ -1,4 +1,4 @@
-package Collection集合.常用方法;
+package java基础.src.Collection集合.常用方法;
 
 import java.util.ArrayList;
 import java.util.Collection;

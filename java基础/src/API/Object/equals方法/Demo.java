@@ -1,4 +1,4 @@
-package API.Object.equals方法;
+package java基础.src.API.Object.equals方法;
 
 public class Demo {
     public static void main(String[] args) {

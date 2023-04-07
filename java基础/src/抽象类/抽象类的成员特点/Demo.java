@@ -1,4 +1,4 @@
-package 抽象类.抽象类的成员特点;
+package java基础.src.抽象类.抽象类的成员特点;
 
 abstract class Animal {
     private final String city = "北京";

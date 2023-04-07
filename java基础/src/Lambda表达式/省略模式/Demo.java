@@ -1,4 +1,4 @@
-package Lambda表达式.省略模式;
+package java基础.src.Lambda表达式.省略模式;
 
 public class Demo {
     public static void main(String[] args) {

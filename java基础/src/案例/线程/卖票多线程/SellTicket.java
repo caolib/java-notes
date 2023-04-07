@@ -1,4 +1,4 @@
-package 案例.线程.卖票多线程;
+package java基础.src.案例.线程.卖票多线程;
 
 //    1:定义一个类SellTicket实现Runnable接口，里面定义一个成员变量：private int tickets=100;
 //    同步的好处：解决了数据安全问题  弊端：运行效率变低

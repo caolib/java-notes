@@ -1,4 +1,4 @@
-package File类.字节流读写数据.异常处理;
+package java基础.src.File类.字节流读写数据.异常处理;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

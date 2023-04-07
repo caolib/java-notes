@@ -1,4 +1,4 @@
-package File类.字符流写数据;
+package java基础.src.File类.字符流写数据;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

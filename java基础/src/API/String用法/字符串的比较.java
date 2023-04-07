@@ -1,4 +1,4 @@
-package API.String用法;
+package java基础.src.API.String用法;
 
 public class 字符串的比较 {
     public static void main(String[] args) {

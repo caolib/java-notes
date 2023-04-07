@@ -1,4 +1,4 @@
-package java面向对象.权限修饰符.p1;
+package java基础.src.java面向对象.权限修饰符.p1;
 
 public class Zi extends Fu {
     public static void main(String[] args) {

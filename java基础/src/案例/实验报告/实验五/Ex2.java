@@ -1,4 +1,4 @@
-package 案例.实验报告.实验五;
+package java基础.src.案例.实验报告.实验五;
 
 /**
  2. 编写名为IParent的接口，其中声明add(String s1,String s2)和minus(String s1,String s2)方法，返回值均为int型；编写Child类继承IParent接口，并实现add和minus方法，要求当主方法中执行如下代码时：

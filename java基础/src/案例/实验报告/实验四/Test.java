@@ -1,4 +1,4 @@
-package 案例.实验报告.实验四;
+package java基础.src.案例.实验报告.实验四;
 
 /**
  * 2. 用类描述计算机中CPU的速度和硬盘的容量。要求Java应用程序有4个类，名字分别是PC，CPU和HardDisk和Test，其中Test是主类。

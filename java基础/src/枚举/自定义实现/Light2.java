@@ -1,4 +1,4 @@
-package 枚举.自定义实现;
+package java基础.src.枚举.自定义实现;
 
 public class Light2 {
     //创建三个实例

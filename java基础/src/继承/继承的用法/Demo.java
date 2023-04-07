@@ -1,4 +1,4 @@
-package 继承.继承的用法;
+package java基础.src.继承.继承的用法;
 
 public class Demo {
     public static void main(String[] args) {

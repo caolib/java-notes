@@ -1,4 +1,4 @@
-package 内部类.局部内部类;
+package java基础.src.内部类.局部内部类;
 
 public class Outer {
     private int num = 10;

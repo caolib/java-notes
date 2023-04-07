@@ -1,4 +1,4 @@
-package File类.字节流读写数据.换行和追加写入;
+package java基础.src.File类.字节流读写数据.换行和追加写入;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

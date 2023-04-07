@@ -1,4 +1,4 @@
-package java面向对象.类和对象.构造方法;
+package java基础.src.java面向对象.类和对象.构造方法;
 
 public class Student {
     String name;

@@ -1,4 +1,4 @@
-package 线程Thread.Runnable接口实现多线程;
+package java基础.src.线程Thread.Runnable接口实现多线程;
 
 /*
     方式2：实现Runnable接口

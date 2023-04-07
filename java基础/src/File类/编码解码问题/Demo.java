@@ -1,4 +1,4 @@
-package File类.编码解码问题;
+package java基础.src.File类.编码解码问题;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;

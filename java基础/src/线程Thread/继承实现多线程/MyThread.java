@@ -1,4 +1,4 @@
-package 线程Thread.继承实现多线程;
+package java基础.src.线程Thread.继承实现多线程;
 
 public class MyThread extends Thread {
     @Override

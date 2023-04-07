@@ -1,4 +1,4 @@
-package File类.字符流读数据;
+package java基础.src.File类.字符流读数据;
 
 import java.io.FileInputStream;
 import java.io.IOException;

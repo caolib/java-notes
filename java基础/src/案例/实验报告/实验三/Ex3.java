@@ -1,4 +1,4 @@
-package 案例.实验报告.实验三;
+package java基础.src.案例.实验报告.实验三;
 
 public class Ex3 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package 案例.运动员与教练;
+package java基础.src.案例.运动员与教练;
 
 //篮球运动员
 public class BasketballJock extends Jock {

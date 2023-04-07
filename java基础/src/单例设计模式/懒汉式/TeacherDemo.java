@@ -1,4 +1,4 @@
-package 单例设计模式.懒汉式;
+package java基础.src.单例设计模式.懒汉式;
 
 public class TeacherDemo {
     public static void main(String[] args) {

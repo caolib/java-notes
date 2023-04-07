@@ -1,4 +1,4 @@
-package API.Set集合.Hash值;
+package java基础.src.API.Set集合.Hash值;
 
 /*
     哈希值：

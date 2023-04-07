@@ -1,4 +1,4 @@
-package 线程Thread.线程优先级;
+package java基础.src.线程Thread.线程优先级;
 
 /*
     Thread类中设置和获取线程优先级的方法

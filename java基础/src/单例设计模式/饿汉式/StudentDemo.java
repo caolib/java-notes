@@ -1,4 +1,4 @@
-package 单例设计模式.饿汉式;
+package java基础.src.单例设计模式.饿汉式;
 
 public class StudentDemo {
     public static void main(String[] args) {

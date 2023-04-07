@@ -1,4 +1,4 @@
-package java面向对象.数组;
+package java基础.src.java面向对象.数组;
 
 public class 数组常见问题 {
     public static void main(String[] args) {

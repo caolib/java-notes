@@ -1,4 +1,4 @@
-package Lambda表达式.有参练习;
+package java基础.src.Lambda表达式.有参练习;
 
 public class FlyableDemo {
     public static void main(String[] args) {

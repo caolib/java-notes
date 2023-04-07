@@ -1,4 +1,4 @@
-package File类.字节缓冲流;
+package java基础.src.File类.字节缓冲流;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;

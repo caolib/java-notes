@@ -1,4 +1,4 @@
-package API.Set集合.TreeSet集合;
+package java基础.src.API.Set集合.TreeSet集合;
 
 //按照年龄大小从小到大排序，年龄相同时按照名字字母排序
 

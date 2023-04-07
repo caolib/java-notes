@@ -1,4 +1,4 @@
-package 案例.学生成绩管理系统;
+package java基础.src.案例.学生成绩管理系统;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package 案例.实验报告.实验四;
+package java基础.src.案例.实验报告.实验四;
 
 class Words {
     static void printWords() {

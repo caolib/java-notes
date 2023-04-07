@@ -1,4 +1,4 @@
-package package用法.Demo;
+package java基础.src.package用法.Demo;
 
 import package用法.ikun.Kun;
 

@@ -1,4 +1,4 @@
-package File类.File类判断和获取功能;
+package java基础.src.File类.File类判断和获取功能;
 /*
     public boolean isDirectory():测试此抽象路径名表示的FiLe是否为目录
     public boolean isFile():测试此抽象路径名表示的FiLe是否为文件

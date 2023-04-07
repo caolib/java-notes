@@ -1,4 +1,4 @@
-package API.Set集合.概述和特点;
+package java基础.src.API.Set集合.概述和特点;
 
 import java.util.HashSet;
 import java.util.Set;

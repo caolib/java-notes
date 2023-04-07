@@ -1,4 +1,4 @@
-package Lambda表达式.无参练习;
+package java基础.src.Lambda表达式.无参练习;
 
 /*
     Lambda表达式的格式：（形式参数）->{代码块}

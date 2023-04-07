@@ -1,4 +1,4 @@
-package 案例.运动员与教练;
+package java基础.src.案例.运动员与教练;
 
 public class Demo {
     public static void main(String[] args) {

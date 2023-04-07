@@ -1,4 +1,4 @@
-package java面向对象.类名作为形参和返回值;
+package java基础.src.java面向对象.类名作为形参和返回值;
 
 abstract class Animal {
     public abstract void eat();

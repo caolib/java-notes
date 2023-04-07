@@ -1,4 +1,4 @@
-package java面向对象.类和对象.private关键字;
+package java基础.src.java面向对象.类和对象.private关键字;
 
 public class Student {
     private String name;    //private修饰，只能在类内访问

@@ -1,4 +1,4 @@
-package API.Set集合.LinkedHashSet集合;
+package java基础.src.API.Set集合.LinkedHashSet集合;
 
 import java.util.LinkedHashSet;
 

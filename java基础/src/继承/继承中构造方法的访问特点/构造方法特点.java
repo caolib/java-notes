@@ -1,4 +1,4 @@
-package 继承.继承中构造方法的访问特点;
+package java基础.src.继承.继承中构造方法的访问特点;
 
 class Fu {
     public int age;

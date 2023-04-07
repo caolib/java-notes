@@ -1,4 +1,4 @@
-package API.Math;
+package java基础.src.API.Math;
 /*
     Math的常用方法
  */

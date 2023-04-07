@@ -1,4 +1,4 @@
-package 线程Thread.线程控制;
+package java基础.src.线程Thread.线程控制;
 
 /*
     static void sleep(Long millis):使当前正在执行的线程停留（暂停执行）指定的毫秒数

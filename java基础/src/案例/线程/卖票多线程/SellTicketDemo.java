@@ -1,4 +1,4 @@
-package 案例.线程.卖票多线程;
+package java基础.src.案例.线程.卖票多线程;
 
 /*
     需求

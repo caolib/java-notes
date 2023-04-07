@@ -1,4 +1,4 @@
-package 继承.继承中的注意事项;
+package java基础.src.继承.继承中的注意事项;
 
 //java只支持单继承，不支持多继承
 //java支持多层继承

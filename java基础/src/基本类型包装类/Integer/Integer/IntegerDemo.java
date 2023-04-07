@@ -1,4 +1,4 @@
-package 基本类型包装类.Integer.Integer;
+package java基础.src.基本类型包装类.Integer.Integer;
 
 /*
     构造方法：

@@ -1,4 +1,4 @@
-package package用法.ikun;
+package java基础.src.package用法.ikun;
 
 public class Kun {
     public void Ctrl() {

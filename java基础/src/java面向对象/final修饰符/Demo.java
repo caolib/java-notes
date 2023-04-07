@@ -1,4 +1,4 @@
-package java面向对象.final修饰符;
+package java基础.src.java面向对象.final修饰符;
 
 //注意：final修饰的类不可以派生
 

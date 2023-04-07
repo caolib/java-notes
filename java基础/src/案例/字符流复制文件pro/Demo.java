@@ -1,4 +1,4 @@
-package 案例.字符流复制文件pro;
+package java基础.src.案例.字符流复制文件pro;
 
 import java.io.FileReader;
 import java.io.FileWriter;

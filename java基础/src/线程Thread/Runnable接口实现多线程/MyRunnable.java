@@ -1,4 +1,4 @@
-package 线程Thread.Runnable接口实现多线程;
+package java基础.src.线程Thread.Runnable接口实现多线程;
 
 public class MyRunnable implements Runnable {
     @Override

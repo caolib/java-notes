@@ -1,4 +1,4 @@
-package 接口.接口;
+package java基础.src.接口.接口;
 
 //定义了一个接口，接口是抽象的
 interface Jumpping {

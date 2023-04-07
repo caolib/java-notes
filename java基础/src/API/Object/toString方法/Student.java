@@ -1,4 +1,4 @@
-package API.Object.toString方法;
+package java基础.src.API.Object.toString方法;
 
 public class Student extends Object {
     public String name;

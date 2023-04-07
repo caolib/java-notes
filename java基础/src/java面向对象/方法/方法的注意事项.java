@@ -1,4 +1,4 @@
-package java面向对象.方法;
+package java基础.src.java面向对象.方法;
 
 public class 方法的注意事项 {
     public static void main(String[] args) {

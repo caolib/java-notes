@@ -1,4 +1,4 @@
-package 多态.多态中的转型;
+package java基础.src.多态.多态中的转型;
 
 class Animal {
     public void eat() {

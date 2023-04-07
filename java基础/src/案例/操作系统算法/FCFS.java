@@ -1,4 +1,4 @@
-package 案例.操作系统算法;
+package java基础.src.案例.操作系统算法;
 
 class Process {
     int create;

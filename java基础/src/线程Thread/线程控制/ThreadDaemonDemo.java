@@ -1,4 +1,4 @@
-package 线程Thread.线程控制;
+package java基础.src.线程Thread.线程控制;
 
 /*
     void setDaemon(boolean on):将此线程标记为守护线程，当运行的线程都是守护线程时，Java虚拟机将退出

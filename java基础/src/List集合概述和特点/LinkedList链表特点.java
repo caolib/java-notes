@@ -1,4 +1,4 @@
-package List集合概述和特点;
+package java基础.src.List集合概述和特点;
 
 import java.util.LinkedList;
 

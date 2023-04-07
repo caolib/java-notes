@@ -1,4 +1,4 @@
-package 线程Thread.线程控制;
+package java基础.src.线程Thread.线程控制;
 
 /*
     void join() 等待这个线程死亡

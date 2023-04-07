@@ -1,4 +1,4 @@
-package API.StringBuilder;
+package java基础.src.API.StringBuilder;
 
 public class String和StringBuilder相互转换 {
     public static void main(String[] args) {

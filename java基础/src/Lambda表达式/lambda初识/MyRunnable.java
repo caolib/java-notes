@@ -1,4 +1,4 @@
-package Lambda表达式.lambda初识;
+package java基础.src.Lambda表达式.lambda初识;
 
 public class MyRunnable implements Runnable {
     @Override

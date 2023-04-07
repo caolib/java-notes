@@ -1,4 +1,4 @@
-package 接口.接口的成员特点;
+package java基础.src.接口.接口的成员特点;
 
 interface Inter {
     //接口的成员变量默认为 公有+静态+常量 即默认带有 public static final 修饰

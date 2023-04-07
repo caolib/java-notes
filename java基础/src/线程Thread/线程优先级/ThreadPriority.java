@@ -1,4 +1,4 @@
-package 线程Thread.线程优先级;
+package java基础.src.线程Thread.线程优先级;
 
 public class ThreadPriority extends Thread {
 

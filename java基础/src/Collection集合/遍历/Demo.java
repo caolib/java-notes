@@ -1,4 +1,4 @@
-package Collection集合.遍历;
+package java基础.src.Collection集合.遍历;
 
 import java.util.ArrayList;
 import java.util.Collection;

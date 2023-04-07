@@ -1,4 +1,0 @@
-abcde
-hello
-java
-666

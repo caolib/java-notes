@@ -1,4 +1,4 @@
-package 案例.集合;
+package java基础.src.案例.集合;
 
 import java.util.Comparator;
 import java.util.TreeSet;

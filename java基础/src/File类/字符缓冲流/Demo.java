@@ -1,4 +1,4 @@
-package File类.字符缓冲流;
+package java基础.src.File类.字符缓冲流;
 
 /*
     字符缓冲流：

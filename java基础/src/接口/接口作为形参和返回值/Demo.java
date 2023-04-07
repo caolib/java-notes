@@ -1,4 +1,4 @@
-package 接口.接口作为形参和返回值;
+package java基础.src.接口.接口作为形参和返回值;
 
 interface Jumping {
     void jump();

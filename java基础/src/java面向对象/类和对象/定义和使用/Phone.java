@@ -1,4 +1,4 @@
-package java面向对象.类和对象.定义和使用;
+package java基础.src.java面向对象.类和对象.定义和使用;
 
 //类的定义
 public class Phone {

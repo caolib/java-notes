@@ -1,4 +1,4 @@
-package 多态.多态中成员访问特点;
+package java基础.src.多态.多态中成员访问特点;
 
 class Animal {
     public int age = 40;

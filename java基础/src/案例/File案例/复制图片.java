@@ -1,4 +1,4 @@
-package 案例.File案例;
+package java基础.src.案例.File案例;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

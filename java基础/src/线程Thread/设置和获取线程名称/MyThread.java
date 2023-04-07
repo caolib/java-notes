@@ -1,4 +1,4 @@
-package 线程Thread.设置和获取线程名称;
+package java基础.src.线程Thread.设置和获取线程名称;
 
 public class MyThread extends Thread {
 

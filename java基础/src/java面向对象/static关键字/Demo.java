@@ -1,4 +1,4 @@
-package java面向对象.static关键字;
+package java基础.src.java面向对象.static关键字;
 
 class Student {
     //被static修饰的 变量 或 方法 为该类的 所有对象 所共有，

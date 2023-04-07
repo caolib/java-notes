@@ -1,4 +1,4 @@
-package API.String用法;
+package java基础.src.API.String用法;
 
 import java.util.Scanner;
 

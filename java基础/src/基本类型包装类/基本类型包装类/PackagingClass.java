@@ -1,4 +1,4 @@
-package 基本类型包装类.基本类型包装类;
+package java基础.src.基本类型包装类.基本类型包装类;
 
 /*
     基本类型包装类.Integer:int类型的包装类

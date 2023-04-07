@@ -1,4 +1,4 @@
-package java面向对象.权限修饰符.p2;
+package java基础.src.java面向对象.权限修饰符.p2;
 
 import java面向对象.权限修饰符.p1.Fu;
 

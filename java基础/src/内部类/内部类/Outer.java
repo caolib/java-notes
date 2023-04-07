@@ -1,4 +1,4 @@
-package 内部类.内部类;
+package java基础.src.内部类.内部类;
 
 /*
     内部类格式：

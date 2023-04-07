@@ -1,4 +1,4 @@
-package Date类.SimpleDateFormat类;
+package java基础.src.Date类.SimpleDateFormat类;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package 案例.运动员与教练;
+package java基础.src.案例.运动员与教练;
 
 //教练类
 public abstract class Instructor extends Person {

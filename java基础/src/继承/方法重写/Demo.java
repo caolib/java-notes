@@ -1,4 +1,4 @@
-package 继承.方法重写;
+package java基础.src.继承.方法重写;
 
 class Phone {
     public void call(String name) {

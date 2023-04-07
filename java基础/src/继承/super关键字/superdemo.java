@@ -1,4 +1,4 @@
-package 继承.super关键字;
+package java基础.src.继承.super关键字;
 
 class Fu {
     public int age = 40;

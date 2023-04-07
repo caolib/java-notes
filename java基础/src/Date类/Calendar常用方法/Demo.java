@@ -1,4 +1,4 @@
-package Date类.Calendar常用方法;
+package java基础.src.Date类.Calendar常用方法;
 /*
     public abstract void add(int field,int amount.):根据日历的规侧，将指定的时间量添加或减去给定的日历字段
     public final void set(int year,int month,int date,):设置当前日历的年月日

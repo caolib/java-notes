@@ -1,4 +1,4 @@
-package java面向对象.方法;
+package java基础.src.java面向对象.方法;
 
 public class 方法练习 {
     //求数组中最大的数

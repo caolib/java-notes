@@ -1,4 +1,4 @@
-package File类.字节流读写数据.写的三种方法;
+package java基础.src.File类.字节流读写数据.写的三种方法;
 
 import java.io.File;
 import java.io.FileOutputStream;

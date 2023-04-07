@@ -1,4 +1,4 @@
-package File类.File类删除功能;
+package java基础.src.File类.File类删除功能;
 
 //如果目录下有内容，那就不能直接删除
 

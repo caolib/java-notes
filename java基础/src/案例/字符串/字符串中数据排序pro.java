@@ -1,4 +1,4 @@
-package 案例.字符串;
+package java基础.src.案例.字符串;
 
 import java.util.Arrays;
 

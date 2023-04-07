@@ -1,4 +1,4 @@
-package 案例.普通案例;
+package java基础.src.案例.普通案例;
 
 class Animal {
     private String name;
