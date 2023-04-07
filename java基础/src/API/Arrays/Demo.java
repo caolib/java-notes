@@ -21,6 +21,5 @@ public class Demo {
         Arrays.sort(arr);
         System.out.println("排序后：" + Arrays.toString(arr));
 
-
     }
 }
