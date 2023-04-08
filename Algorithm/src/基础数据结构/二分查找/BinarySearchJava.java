@@ -2,6 +2,7 @@ package Algorithm.src.基础数据结构.二分查找;
 
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
+
 import java.util.Arrays;
 
 public class BinarySearchJava {
@@ -41,7 +42,6 @@ public class BinarySearchJava {
         for (int i : targetArr) {
             System.out.print(i + " ");
         }
-
 
     }
 }
