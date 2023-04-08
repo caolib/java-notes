@@ -1,6 +1,6 @@
 package Algorithm.src.基础数据结构.二分查找;
 
-public class BinarySearch2 {
+public class BinarySearch改动版 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
 
@@ -17,6 +17,7 @@ public class BinarySearch2 {
             return -1;
         }
 
+        //左闭右开
         int i = 0;
         int j = arr.length;
 

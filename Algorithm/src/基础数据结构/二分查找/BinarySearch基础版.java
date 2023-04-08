@@ -11,7 +11,7 @@ import org.junit.Test;
  * >>>1 表示这个数字的二进制数全部向右移动一位（相当于/2），缺少的用0填充
  */
 
-public class BinarySearch {
+public class BinarySearch基础版 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         System.out.println(binarySearch(arr, 4));
