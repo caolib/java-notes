@@ -1,4 +1,4 @@
-package java基础.src.案例.操作系统算法.磁盘调度算法;
+package java基础.src.操作系统算法.磁盘调度算法;
 
 public class FIFO {
     public static void main(String[] args) {
