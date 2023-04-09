@@ -2,9 +2,9 @@ package java基础.src.操作系统算法.磁盘调度算法;
 
 public class FIFO {
     public static void main(String[] args) {
-/*        int start = 100;
+        int start = 100;
         int[] arr = {55, 58, 39, 18, 90, 160, 150, 38, 184};
-        printFIFO(start, arr);*/
+        printFIFO(start, arr);
 
         int start2 = 143;
         int[] arr2 = {86, 147, 91, 177, 94, 150, 102, 175, 130};
@@ -32,7 +32,11 @@ public class FIFO {
 
     //打印输出结果
     public static void printFIFO(int start, int[] arr) {
-        System.out.println("寻道总长度：" + runFIFO(start, arr));
+        System.out.print("寻道顺序：");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(i != (arr.length - 1) ? arr[i] + "->" : arr[i]);
+        }
+        System.out.println("\n寻道总长度：" + runFIFO(start, arr));
         System.out.println("平均寻道长度：" + runFIFO(start, arr) * 1.0 / arr.length);
     }
 }

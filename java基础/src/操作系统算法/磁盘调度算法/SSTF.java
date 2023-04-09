@@ -30,13 +30,12 @@ public class SSTF {
     }
 
     public static int latest(ArrayList<Integer> arr, int num) {
-        //使用TreeMap得到这个数字与数组中所有元素的距离作为key，索引作为value，
+        // 使用TreeMap得到这个数字与数组中所有元素的距离作为key，索引作为value，
         // TreeMap可以自动排序，所以只要获取第一个元素的value就是
         TreeMap<Integer, Integer> treeMap = new TreeMap<>();
         for (int i = 0; i < arr.size(); i++) {
             treeMap.put(Math.abs(num - arr.get(i)), i);
         }
-//        System.out.println(treeMap);
         return treeMap.firstEntry().getValue();
     }
 
