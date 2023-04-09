@@ -1,4 +1,4 @@
-package java基础.src.案例.操作系统算法;
+package java基础.src.案例.操作系统算法.页面置换算法;
 
 import java.util.Random;
 
