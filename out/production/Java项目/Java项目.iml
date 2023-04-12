@@ -17,6 +17,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+<<<<<<< HEAD
+=======
     <orderEntry type="module-library">
       <library name="JUnit5.8.1">
         <CLASSES>
@@ -33,6 +35,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+<<<<<<< HEAD
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -42,5 +45,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+=======
+>>>>>>> 5766cc8f06a38424a380149a7084f2b2a1e78797
+>>>>>>> fef80579ace590ab3dadd4a44353ad3a5d5df766
   </component>
 </module>

@@ -9,9 +9,7 @@ public class Ex2 {
         sb.insert(0, "china");
         System.out.println(sb);
 
-        sb.replace(sb.indexOf("a"), sb.length(), "beijing");
+        sb.replace(sb.indexOf("shanghai"), sb.length(), "beijing");
         System.out.println(sb);
-
-
     }
 }
