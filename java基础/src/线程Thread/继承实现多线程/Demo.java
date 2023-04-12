@@ -8,8 +8,6 @@ package java基础.src.线程Thread.继承实现多线程;
     4:启动线程
  */
 
-import java.util.Arrays;
-
 public class Demo {
     public static void main(String[] args) {
         MyThread my1 = new MyThread();
