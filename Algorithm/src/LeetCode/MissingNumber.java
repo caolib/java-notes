@@ -1,4 +1,4 @@
-package LeetCode;
+package Algorithm.src.LeetCode;
 
 public class MissingNumber {
     public static void main(String[] args) {

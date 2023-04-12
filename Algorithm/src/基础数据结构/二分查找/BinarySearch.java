@@ -1,4 +1,4 @@
-package 基础数据结构.二分查找;
+package Algorithm.src.基础数据结构.二分查找;
 
 import org.junit.Test;
 
