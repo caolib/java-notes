@@ -15,7 +15,7 @@ public class BinarySearch平衡版 {
         //左闭右开
         int i = 0;
         int j = a.length;
-        //j-i大于1意思就是
+        //j-i大于1意思就是i和j之间没有数据
         while (j - i > 1) {
             int m = (i + j) >>> 1;
             if (target < a[m]) {

@@ -31,7 +31,7 @@ public class BinarySearch基础版 {
         //循环条件是 i和j之间有数据，只要有数据就一直查找下去，直到没有数据或者找到了目标值
         while (i <= j) {
             //定义要查找区间的中间值(向下取整)
-            int med = (i + j) / 2;        //右移运算符相当于/2，但是不会出现超出int类型最大数据的可能
+            int med = (i + j) / 2;        //右移运算符>>>相当于/2，但是不会出现超出int类型最大数据的可能
             if (arr[med] < target) {
                 i = med + 1;                //如果大于中间值，那么查找的范围缩小到右边
             } else if (target < arr[med]) {
