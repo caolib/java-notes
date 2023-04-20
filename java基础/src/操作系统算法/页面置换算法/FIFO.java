@@ -62,8 +62,8 @@ public class FIFO {
         System.out.println("物理块数:" + len);
         System.out.println("命中次数:" + hits);
         System.out.println("缺页次数:" + (arr.length - hits));
-        System.out.println("缺页率:" + 100.0 * (arr.length - hits) / arr.length + "%");
-        System.out.println("-----------");
+        System.out.printf("缺页率:%1.2f", (100.0 * (arr.length - hits) / arr.length));
+        System.out.println("%\n-----------");
     }
 
 }

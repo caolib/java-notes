@@ -9,6 +9,11 @@ public class SCANPro {
         boolean larger = true;//表示先从小到大
         ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(55, 58, 39, 18, 90, 160, 150, 38, 184));
         runSCANPro(arr, start, larger);
+
+        int start2 = 143;
+        ArrayList<Integer> arr2 = new ArrayList<>(Arrays.asList(86, 147, 91, 177, 94, 150, 102, 175, 130));
+        runSCANPro(arr2, start2, true);
+
     }
 
     /**
@@ -68,6 +73,7 @@ public class SCANPro {
         }
 
         System.out.println("\n寻道总长度：" + length);
-        System.out.println("平均寻道长度：" + length * 1.0 / (target.size() - 1) + "\n");
+        System.out.println(target);
+        System.out.println("平均寻道长度：" + length + "" + "/" + (target.size() - 1) + "" + "= " + length * 1.0 / (target.size() - 1) + "\n");
     }
 }

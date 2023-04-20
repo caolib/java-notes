@@ -19,6 +19,7 @@ public class FIFO {
      *     <li>start:开始时磁头所在位置</li>
      *     <li>arr:请求序列</li>
      *     <li>num:返回值为总寻道长度</li>
+     *     <img src="../../../images/笑了.jpg">
      * </ul>
      */
     public static int runFIFO(int start, int[] arr) {
