@@ -11,7 +11,7 @@ public class SellTicket implements Runnable {
     //同步静态方法
     private static synchronized void sellTickets() {
         if (tickets > 0) {
-            System.out.println(Thread.currentThread().getName() + "正在出售第" + (101 - tickets) + "张票");
+            System.out.println(Thread.currentThread().getName() + "正在出售第 " + (101 - tickets) + "张票");
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {

@@ -6,5 +6,6 @@ public class ThreadDaemon extends Thread {
         for (int i = 0; i < 100; i++) {
             System.out.println(getName() + ":" + i);
         }
+        System.out.println(this.getName() + " 执行完成");
     }
 }

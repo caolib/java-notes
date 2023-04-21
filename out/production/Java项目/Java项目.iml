@@ -35,18 +35,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-<<<<<<< HEAD
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/24.0.0/annotations-24.0.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-=======
 >>>>>>> 5766cc8f06a38424a380149a7084f2b2a1e78797
->>>>>>> fef80579ace590ab3dadd4a44353ad3a5d5df766
   </component>
 </module>
