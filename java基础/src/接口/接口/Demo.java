@@ -2,7 +2,7 @@ package java基础.src.接口.接口;
 
 //定义了一个接口，接口是抽象的
 interface Jumpping {
-    public void jump();
+    void jump();
 }
 
 //类与接口之间不用继承，而用implements(实现)
@@ -23,6 +23,9 @@ public class Demo {
         //使用接口多态，用实现类创建对象
         Jumpping j = new Cat();
         j.jump();
+
+        Jumpping j2 = () -> System.out.println("lambda表达式实现接口方法");
+        j2.jump();
 
     }
 }

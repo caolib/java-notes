@@ -1,24 +1,29 @@
 package java基础.src.案例.普通案例;
 
-class A {
-
-}
-
-class B extends A {
-}
-
-class C extends B {
-}
-
-
 public class Hello {
+    int a = 0;
+
+/*    public static int f() {
+        System.out.println(666);
+        int a = 0;
+         try {
+         System.out.println("before");
+         a /= 0;
+         System.out.println("after");
+         } catch (Exception e) {
+         System.out.println("catch");
+         return a;
+         } finally {
+         System.out.println("finally");
+         a++;
+         return a;
+         }
+    }*/
+
     public static void main(String[] args) {
-        A a0 = new A();
-        A a1 = new B();
-        A a2 = new C();
+
+
 
     }
-
-
 
 }
