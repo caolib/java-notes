@@ -1,4 +1,4 @@
-package java基础.src.案例.实验报告.试验七;
+package java基础.src.案例.实验报告.实验七;
 
 import java.io.*;
 
