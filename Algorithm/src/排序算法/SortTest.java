@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import static Algorithm.src.排序算法.BubbleSortPro.bubbleSort;
 import static Algorithm.src.排序算法.BubbleSortPro.bubbleSortPro;
+import static Algorithm.src.排序算法.InsertSort.insertSort;
 import static Algorithm.src.排序算法.SelectionSort.selectSort;
 
 
@@ -54,8 +55,21 @@ public class SortTest {
         return arr;
     }
 
+
     /**
-     * <h1 color="#10ac84">测试选择排序和冒泡排序</h1>
+     * <h1 color="#10ac84">插入排序</h1>
+     */
+    public static int[] testInsertSort(int[] arr) {
+        long start = System.currentTimeMillis();
+        insertSort(arr);
+        long end = System.currentTimeMillis();
+        System.out.println("插入\t\t" + (end - start) + "ms");
+        return arr;
+    }
+
+
+    /**
+     * <h1 color="#10ac84">测试选择排序、冒泡、插入排序</h1>
      */
     public static void main(String[] args) {
         System.out.println("排序算法\t" + "用时" + "\t");
@@ -65,9 +79,13 @@ public class SortTest {
         int[] select = testSelectSort(arr);
         int[] bubble = testBubbleSort(arr);
         int[] bubblePro = testBubbleSortPro(arr);
+        int[] insert = testInsertSort(arr);
 
 
-        if (!(Arrays.equals(test, select) && Arrays.equals(test, bubble) && Arrays.equals(test, bubblePro))) {
+        if (!(Arrays.equals(test, select)
+                && Arrays.equals(test, bubblePro)
+                && Arrays.equals(test, bubble)
+                && Arrays.equals(test, insert))) {
             System.out.println("错误！");
         }
     }
@@ -84,9 +102,6 @@ public class SortTest {
      */
     public static int[] getArr() {
         int[] arr = new int[num];
-        for (int i = 0; i < num; i++) {
-            arr[i] = (int) (Math.random() * 8000000);
-        }
         return arr;
     }
 
