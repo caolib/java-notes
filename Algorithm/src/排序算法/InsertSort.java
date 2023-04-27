@@ -1,6 +1,5 @@
 package Algorithm.src.排序算法;
 
-
 /**
  * <h1 color="#10ac84">插入排序</h1>
  */
@@ -24,9 +23,6 @@ public class InsertSort {
             }
             //退出循环说明插入位置找到,insertIndex+1
             arr[insertIndex + 1] = insertVal;
-
-/*            System.out.println("第" + i + "插入:");
-            System.out.println(Arrays.toString(arr));*/
 
         }
         return arr;

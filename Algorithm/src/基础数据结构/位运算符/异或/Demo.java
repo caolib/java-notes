@@ -14,13 +14,22 @@ public class Demo {
         int a = 5;
         int b = 13;
 
-        //有一个问题就是这两个值不能是同一个数，否则异或会等于0
+        //问题：当同一个变量或指向同一个内存地址，异或会等于0
         a = a^b;
         b = a^b;
         a = a ^ b;
 
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+
+        int c = 10;
+        int d = 10;
+
+        c = c ^ d;
+        d = c ^ d;
+        c = c ^ d;
+        System.out.println(c);
+        System.out.println(d);
 
     }
 }
