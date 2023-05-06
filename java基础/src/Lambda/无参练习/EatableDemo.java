@@ -1,5 +1,7 @@
 package java基础.src.Lambda.无参练习;
 
+import java.util.function.Function;
+
 /*
     Lambda表达式的格式：（形式参数）->{代码块}
     练习1：
@@ -29,6 +31,13 @@ public class EatableDemo {
             System.out.println("吃饭");
         });
 
+
+        int x = 0;
+        Eatable a = () -> System.out.println(x);
+        a.eat();
+
+        Function<Integer, Integer> func = (n) -> n * n;
+        System.out.println(func.apply(10));
 
     }
 

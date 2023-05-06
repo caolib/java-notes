@@ -16,9 +16,7 @@ public class LambdaDemo {
 //        }).start();
 
         //lambda表达式改进
-        new Thread(() -> {
-            System.out.println("多线程启动");
-        }).start();
+        new Thread(() -> System.out.println("多线程启动")).start();
 
     }
 }

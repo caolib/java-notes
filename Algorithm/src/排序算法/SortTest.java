@@ -1,11 +1,14 @@
 package Algorithm.src.排序算法;
 
 import java.util.Arrays;
+import java.util.Random;
 
 import static Algorithm.src.排序算法.BubbleSortPro.bubbleSort;
 import static Algorithm.src.排序算法.BubbleSortPro.bubbleSortPro;
 import static Algorithm.src.排序算法.InsertSort.insertSort;
+import static Algorithm.src.排序算法.QuickSort.quickSort;
 import static Algorithm.src.排序算法.SelectionSort.selectSort;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
 public class SortTest {
@@ -69,31 +72,44 @@ public class SortTest {
 
 
     /**
-     * <h1 color="#10ac84">测试选择排序、冒泡、插入排序</h1>
+     * <h1 color="#10ac84">快速排序</h1>
+     */
+    public static int[] testQuickSort(int[] arr) {
+        long start = System.currentTimeMillis();
+        quickSort(arr, 0, arr.length - 1);
+        long end = System.currentTimeMillis();
+        System.out.println("快速\t\t" + (end - start) + "ms");
+        return arr;
+    }
+
+
+    /**
+     * <h1 color="#10ac84">测试选择排序、冒泡、插入、快速排序</h1>
      */
     public static void main(String[] args) {
         System.out.println("排序算法\t" + "用时" + "\t");
         int[] arr = getArr();
+        System.out.println(Arrays.toString(arr));
 
         int[] test = test(arr);
         int[] select = testSelectSort(arr);
         int[] bubble = testBubbleSort(arr);
         int[] bubblePro = testBubbleSortPro(arr);
         int[] insert = testInsertSort(arr);
+        int[] quick = testQuickSort(arr);
 
+        assertArrayEquals(test, select);
+        assertArrayEquals(test, bubble);
+        assertArrayEquals(test, bubblePro);
+        assertArrayEquals(test, insert);
+        assertArrayEquals(test, quick);
 
-        if (!(Arrays.equals(test, select)
-                && Arrays.equals(test, bubblePro)
-                && Arrays.equals(test, bubble)
-                && Arrays.equals(test, insert))) {
-            System.out.println("错误！");
-        }
     }
 
     /**
      * <h1 color="#10ac84">待排序数组</h1>
      */
-    private static final int num = 80000;
+    private static final int num = 10000;
     public static int[] arr = getArr();
 
 
@@ -102,6 +118,11 @@ public class SortTest {
      */
     public static int[] getArr() {
         int[] arr = new int[num];
+        Random rd = new Random();
+        for (int i = 0; i < num; i++) {
+            arr[i] = rd.nextInt(10000000);
+        }
+
         return arr;
     }
 
