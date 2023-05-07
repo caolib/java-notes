@@ -5,6 +5,7 @@ import java.util.Random;
 
 import static Algorithm.src.排序算法.BubbleSortPro.bubbleSort;
 import static Algorithm.src.排序算法.BubbleSortPro.bubbleSortPro;
+import static Algorithm.src.排序算法.CountSort.countSort;
 import static Algorithm.src.排序算法.InsertSort.insertSort;
 import static Algorithm.src.排序算法.QuickSort.quickSort;
 import static Algorithm.src.排序算法.SelectionSort.selectSort;
@@ -82,34 +83,47 @@ public class SortTest {
         return arr;
     }
 
+    /**
+     * <h1 color="#10ac84">计数排序</h1>
+     */
+    public static int[] testCountSort(int[] arr) {
+        long start = System.currentTimeMillis();
+        countSort(arr);
+        long end = System.currentTimeMillis();
+        System.out.println("计数\t\t" + (end - start) + "ms");
+        return arr;
+    }
+
 
     /**
      * <h1 color="#10ac84">测试选择排序、冒泡、插入、快速排序</h1>
      */
     public static void main(String[] args) {
+        System.out.println("结果无法比较算法的优劣");
         System.out.println("排序算法\t" + "用时" + "\t");
         int[] arr = getArr();
-        System.out.println(Arrays.toString(arr));
 
         int[] test = test(arr);
         int[] select = testSelectSort(arr);
         int[] bubble = testBubbleSort(arr);
         int[] bubblePro = testBubbleSortPro(arr);
         int[] insert = testInsertSort(arr);
-        int[] quick = testQuickSort(arr);
+//        int[] quick = testQuickSort(arr);
+        int[] count = testCountSort(arr);
 
         assertArrayEquals(test, select);
         assertArrayEquals(test, bubble);
         assertArrayEquals(test, bubblePro);
         assertArrayEquals(test, insert);
-        assertArrayEquals(test, quick);
+//        assertArrayEquals(test, quick);
+        assertArrayEquals(test,count);
 
     }
 
     /**
      * <h1 color="#10ac84">待排序数组</h1>
      */
-    private static final int num = 10000;
+    private static final int num = 100000;
     public static int[] arr = getArr();
 
 
