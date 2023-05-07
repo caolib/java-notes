@@ -99,9 +99,8 @@ public class SortTest {
      * <h1 color="#10ac84">测试选择排序、冒泡、插入、快速排序</h1>
      */
     public static void main(String[] args) {
-        System.out.println("结果无法比较算法的优劣");
+        System.out.println("<仅供参考>");
         System.out.println("排序算法\t" + "用时" + "\t");
-        int[] arr = getArr();
 
         int[] test = test(arr);
         int[] select = testSelectSort(arr);
@@ -131,8 +130,9 @@ public class SortTest {
      * <h1 color="#10ac84">返回长度为num的数组，每个元素都是[0,10000000)之间的随机数字</h1>
      */
     public static int[] getArr() {
+
         int[] arr = new int[num];
-        Random rd = new Random();
+        Random rd = new Random(System.currentTimeMillis());
         for (int i = 0; i < num; i++) {
             arr[i] = rd.nextInt(10000000);
         }
