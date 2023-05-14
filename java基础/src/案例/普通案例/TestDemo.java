@@ -2,8 +2,6 @@ package java基础.src.案例.普通案例;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-
 public class TestDemo {
 
     @Test
@@ -81,8 +79,6 @@ public class TestDemo {
     @Test
     public void testStr() {
         System.out.println(strStr("adbutsad", "sad"));
-
-
     }
 
     public int strStr(String haystack, String needle) {
@@ -105,3 +101,4 @@ public class TestDemo {
     }
 
 }
+

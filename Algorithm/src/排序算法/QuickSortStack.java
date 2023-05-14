@@ -11,18 +11,18 @@ import static org.junit.Assert.assertEquals;
 
 public class QuickSortStack {
     public static void main(String[] args) {
-         Random rand = new Random(System.currentTimeMillis());
-         int num = 100000;
-         int[] arr = new int[num];
-         int[] arr2 = new int[num];
+        Random rand = new Random(System.currentTimeMillis());
+        int num = 100000;
+        int[] arr = new int[num];
+        int[] arr2 = new int[num];
 
-         for (int i = 0; i < num; i++) {
-         int val = rand.nextInt(1000000);
-         arr[i] = val;
-         arr2[i] = val;
-         }
-         Arrays.sort(arr2);
-         quickSort_stack(arr);
+        for (int i = 0; i < num; i++) {
+            int val = rand.nextInt(1000000);
+            arr[i] = val;
+            arr2[i] = val;
+        }
+        Arrays.sort(arr2);
+        quickSort_stack(arr);
         assertArrayEquals(arr, arr2);
 
     }
@@ -81,24 +81,26 @@ public class QuickSortStack {
     }
 
     @Test
-public void testQuickSort_stack() {
-    int[] arr = {5, 4, 3, 2, 1};
-    QuickSortStack.quickSort_stack(arr);
-    int[] expected = {1, 2, 3, 4, 5};
-    assertArrayEquals(expected, arr);
-}
- @Test
-public void testPartition() {
-    int[] arr = {5, 4, 3, 2, 1};
-    int pivotIndex = QuickSortStack.partition(arr, 0, arr.length - 1);
-    assertEquals(2, pivotIndex);
-}
- @Test
-public void testSwap() {
-    int[] arr = {5, 4, 3, 2, 1};
-    QuickSortStack.swap(arr, 0, arr.length - 1);
-    int[] expected = {1, 4, 3, 2, 5};
-    assertArrayEquals(expected, arr);
-}
+    public void testQuickSort_stack() {
+        int[] arr = {5, 4, 3, 2, 1};
+        QuickSortStack.quickSort_stack(arr);
+        int[] expected = {1, 2, 3, 4, 5};
+        assertArrayEquals(expected, arr);
+    }
+
+    @Test
+    public void testPartition() {
+        int[] arr = {5, 4, 3, 2, 1};
+        int pivotIndex = QuickSortStack.partition(arr, 0, arr.length - 1);
+        assertEquals(2, pivotIndex);
+    }
+
+    @Test
+    public void testSwap() {
+        int[] arr = {5, 4, 3, 2, 1};
+        QuickSortStack.swap(arr, 0, arr.length - 1);
+        int[] expected = {1, 4, 3, 2, 5};
+        assertArrayEquals(expected, arr);
+    }
 
 }
