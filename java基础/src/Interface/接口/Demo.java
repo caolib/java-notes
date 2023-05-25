@@ -13,7 +13,7 @@ class Cat implements Jumpping {
     }
 }
 
-//类要么实现接口，要么自己也成为抽象类
+//类要么实现接口，要么自己成为抽象类
 abstract class Dog implements Jumpping {
 }
 

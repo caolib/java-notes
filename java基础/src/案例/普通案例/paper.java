@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class paper {
+
     public static void main(String[] args) {
-        System.out.println(getRow(3));
-        System.out.println(getRow(0));
-        System.out.println(getRow(1));
+
     }
 
-    public static List<Integer> getRow(int rowIndex) {
+    public List<Integer> getRow(int rowIndex) {
         List<Integer> lst = new ArrayList<>();
-        if (rowIndex == 0) {
+        if(rowIndex == 1){
             List<Integer> l = new ArrayList<>();
             l.add(1);
             return l;
-        } else {
+        }else{
             lst.add(1);
-            List<Integer> pre = getRow(rowIndex - 1);
-            for (int i = 1; i < rowIndex; i++) {
-                lst.add(pre.get(i - 1) + pre.get(i));
+            List<Integer> pre = getRow(rowIndex-1);
+            for(int i=1;i<rowIndex-1;i++){
+                lst.add(pre.get(i-1)+pre.get(i));
             }
             lst.add(1);
         }
         return lst;
-    }
+}
+
 }
