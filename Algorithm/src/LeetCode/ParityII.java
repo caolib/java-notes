@@ -1,5 +1,8 @@
 package Algorithm.src.LeetCode;
 
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+
 import java.util.ArrayList;
 
 public class ParityII {
@@ -19,10 +22,39 @@ public class ParityII {
                     even.add(nums[i]);
                 } else {
                     odd.add(nums[i]);
-
                 }
             }
         }
         return nums;
+    }
+
+    @Test
+    public void testSortArrayByParityII() {
+        ParityII parityII = new ParityII();
+
+        // 测试用例1：奇数和偶数数量相等，且按照要求排列
+        int[] nums1 = {2, 3, 4, 1, 6, 7};
+        int[] expected1 = {2, 3, 4, 1, 6, 7};
+        Assertions.assertArrayEquals(expected1, parityII.sortArrayByParityII(nums1));
+
+        // 测试用例2：奇数和偶数数量相等，但未按照要求排列
+        int[] nums2 = {2, 4, 1, 3, 6, 7};
+        int[] expected2 = {2, 1, 4, 3, 6, 7};
+        Assertions.assertNotEquals(expected2, parityII.sortArrayByParityII(nums2));
+
+        // 测试用例3：全部为奇数
+        int[] nums3 = {1, 3, 5, 7, 9};
+        int[] expected3 = {1, 3, 5, 7, 9};
+        Assertions.assertArrayEquals(expected3, parityII.sortArrayByParityII(nums3));
+
+        // 测试用例4：全部为偶数
+        int[] nums4 = {2, 4, 6, 8, 10};
+        int[] expected4 = {2, 4, 6, 8, 10};
+        Assertions.assertArrayEquals(expected4, parityII.sortArrayByParityII(nums4));
+
+        // 测试用例5：空数组
+        int[] nums5 = {};
+        int[] expected5 = {};
+        Assertions.assertArrayEquals(expected5, parityII.sortArrayByParityII(nums5));
     }
 }

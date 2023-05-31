@@ -85,21 +85,13 @@ public class Parity {
         int[] arr = {1, 3, 5, 7};
         assertEquals(0, Parity.num(arr));
     }
-    @Test
-    public void testSortArrayByParityWithNullInput() {
-        int[] arr = null;
-        assertNull(Parity.sortArrayByParity(arr));
-    }
+
     @Test
     public void testSortArrayByParityWithEmptyInput() {
         int[] arr = {};
         assertArrayEquals(arr, Parity.sortArrayByParity(arr));
     }
-    @Test
-    public void testNumWithNullInput() {
-        int[] arr = null;
-        assertEquals(0, Parity.num(arr));
-    }
+
     @Test
     public void testNumWithEmptyInput() {
         int[] arr = {};

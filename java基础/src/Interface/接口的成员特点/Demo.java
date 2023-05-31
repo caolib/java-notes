@@ -11,6 +11,12 @@ interface Inter {
 //    public void fun(){}  接口不能有具体的方法，只能有抽象方法
     void method();   //接口的方法是抽象的，默认带有 public abstract 修饰
 
+    //从Java8开始接口中可以存在默认方法和静态方法
+    default void fun() {
+    };
+
+    static void fun2(){
+    };
 }
 
 //接口的实现类
