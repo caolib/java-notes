@@ -1,44 +1,21 @@
 package java基础.src.案例.普通案例;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-/*        System.out.println(thirdMax(new int[]{1, 2, 3}));
-        System.out.println(thirdMax(new int[]{2, 2, 3, 1}));
-        System.out.println(thirdMax(new int[]{-2147483648, 1, 1}));*/
-
-        System.out.println(isSubsequence("acb", "ahbgdc"));
-
-
+        int[] arr = {6, 2, 7, 5, 1, 2, 0, 3, 10, 2, 5, 0, 5, 5, 0, 8, 7, 6, 8, 0};
+        System.out.println(trimMean(arr));
     }
 
-    public String replaceSpace(String s) {
-        StringBuilder str = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == ' ') {
-                str.append("%20");
-            } else {
-                str.append(s.charAt(i));
-            }
+    public static double trimMean(int[] arr) {
+        Arrays.sort(arr);
+        int len = (int) (arr.length * 0.05);
+        int sum = 0;
+        for (int i = len; i < arr.length - len; i++) {
+            sum += arr[i];
         }
-        return String.valueOf(str);
+        return Math.round(100000.0 * sum / (arr.length - 2 * len)) / 100000.0;
     }
 
-    public static boolean isSubsequence(String s, String t) {
-        int j=0;
-        boolean flag = false;
-        for(int i=0;i<s.length();i++){
-            flag = false;
-            for(;j<t.length();j++){
-                if(t.charAt(j)==s.charAt(i)){
-                    flag = true;
-                    j++;
-                    break;
-                }
-            }
-            if(!flag){
-                return false;
-            }
-        }
-        return true;
-    }
 }

@@ -27,9 +27,7 @@ public class EatableDemo {
 //        });
 
         //lambda表达式
-        useEatable(() -> {
-            System.out.println("吃饭");
-        });
+        useEatable(() -> System.out.println("吃饭"));
 
 
         int x = 0;
