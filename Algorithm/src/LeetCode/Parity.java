@@ -1,6 +1,10 @@
 package Algorithm.src.LeetCode;
 
+import org.junit.Test;
+
 import java.util.Arrays;
+
+import static org.junit.Assert.*;
 
 public class Parity {
     public static void main(String[] args) {
@@ -43,5 +47,54 @@ public class Parity {
             }
         }
         return num;
+    }
+
+    /**
+     * <h1 color="#10ac84">单元测试</h1>
+     * */
+    @Test
+    public void testSortArrayByParityWithEvenAndOddNumbers() {
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] expectedArr = {2, 4, 1, 3, 5};
+        assertArrayEquals(expectedArr, Parity.sortArrayByParity(arr));
+    }
+    @Test
+    public void testSortArrayByParityWithOnlyEvenNumbers() {
+        int[] arr = {2, 4, 6, 8};
+        int[] expectedArr = {2, 4, 6, 8};
+        assertArrayEquals(expectedArr, Parity.sortArrayByParity(arr));
+    }
+    @Test
+    public void testSortArrayByParityWithOnlyOddNumbers() {
+        int[] arr = {1, 3, 5, 7};
+        int[] expectedArr = {1, 3, 5, 7};
+        assertArrayEquals(expectedArr, Parity.sortArrayByParity(arr));
+    }
+    @Test
+    public void testNumWithEvenAndOddNumbers() {
+        int[] arr = {1, 2, 3, 4, 5};
+        assertEquals(2, Parity.num(arr));
+    }
+    @Test
+    public void testNumWithOnlyEvenNumbers() {
+        int[] arr = {2, 4, 6, 8};
+        assertEquals(4, Parity.num(arr));
+    }
+    @Test
+    public void testNumWithOnlyOddNumbers() {
+        int[] arr = {1, 3, 5, 7};
+        assertEquals(0, Parity.num(arr));
+    }
+
+    @Test
+    public void testSortArrayByParityWithEmptyInput() {
+        int[] arr = {};
+        assertArrayEquals(arr, Parity.sortArrayByParity(arr));
+    }
+
+    @Test
+    public void testNumWithEmptyInput() {
+        int[] arr = {};
+        assertEquals(0, Parity.num(arr));
     }
 }

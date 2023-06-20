@@ -29,6 +29,5 @@ public class Demo {
         File f3 = new File("X:\\Java项目\\java类和对象\\src\\files\\java\\javase");
         System.out.println(f3.mkdirs());
 
-
     }
 }

@@ -20,6 +20,7 @@ public class Outer {
         Inner i = new Inner();
         i.show();
 
+
     }
 
     public class Inner {

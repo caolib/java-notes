@@ -22,7 +22,6 @@ class Mother {
 }
 
 class Son extends Father {
-
 }
 
 public class Demo {
