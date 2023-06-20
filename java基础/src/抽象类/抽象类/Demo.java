@@ -25,8 +25,19 @@ class Cat extends Animal {
 
 public class Demo {
     public static void main(String[] args) {
-//        Animal a = new Animal();      抽象类不能创建对象
+//        Animal a = new Animal();      抽象类不能直接创建对象
 //        a.eat();
+
+        /*
+        Animal b = new Animal(){
+            @Override
+            void eat(){
+                System.out.println("amagi");
+            }
+        };
+        b.eat();
+        */
+        
         Animal a = new Cat();
         a.eat();
         a.sleep();
