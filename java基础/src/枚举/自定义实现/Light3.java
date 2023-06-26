@@ -42,7 +42,6 @@ public abstract class Light3 {
 
     }
 
-
     public abstract void show();
 
 }
