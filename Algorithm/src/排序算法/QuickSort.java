@@ -36,7 +36,7 @@ public class QuickSort {
         int pivot = arr[right];
         // 遍历除最后一个数之外的所有数，小于基准数就放到前面
         // 数组变成: [<pivot] + [>=pivot] + pivot
-        for (int i = left; i <= right - 1; i++) {//<<<注意这里的right是索引，所以<=right-1而不是<right>>>
+        for (int i = left; i <= right-1 ; i++) {
             if (arr[i] < pivot) {
                 int temp = arr[i];
                 arr[i] = arr[pre];
@@ -68,9 +68,6 @@ public class QuickSort {
         QuickSort.quickSort(arr2, 0, arr2.length - 1);
         int[] expected2 = {5, 4, 3, 2, 1};
         assertNotEquals(arr2,expected2);
-
-
-
     }
 
 

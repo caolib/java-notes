@@ -42,16 +42,17 @@ public class Hello {
     }
 
     // 找到一个基准点将比基准点小的元素放到前面，大的元素放到后面
-    public static int parttition(int arr[], int left, int right) {
+    public static int parttition(int[] arr, int left, int right) {
         int pivot = arr[right];// 最后一个元素作为基准点
 
-        // 如果比基准点小就放到前面
+        // 如果比基准点小就将它和前面的数交换位置
         for (int i = left; i < right; i++) {
             if (arr[i] < pivot) {
                 int temp = arr[i];
                 arr[i] = arr[left];
                 arr[left] = temp;
                 left++;
+                System.out.println("交换");
             }
         }
         // 只需要将第一个比基准点大的元素和基准点交换位置就分成了两个数组
@@ -59,11 +60,11 @@ public class Hello {
         int temp = arr[left];
         arr[left] = arr[right];
         arr[right] = temp;
+        System.out.println("交换");
 
         System.out.println(Arrays.toString(arr));
         // 返回值是基准点的索引
         return left;
     }
-
 }
 

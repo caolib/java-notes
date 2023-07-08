@@ -22,4 +22,5 @@ public class Light2 {
                 "name='" + name + '\'' +
                 '}';
     }
+
 }
