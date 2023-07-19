@@ -5,7 +5,6 @@ import java.util.Stack;
 public class StackDemo {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
-
         // 将元素压入栈中
         stack.push(1);
         stack.push(2);

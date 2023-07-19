@@ -16,7 +16,7 @@ public class SelectionSort {
         if (arr.length <= 1) {
             return;
         }
-
+        //n个数字只需要排n-1次
         for (int i = 0; i < arr.length - 1; i++) {
             int index = i;
             //找出最小值
@@ -25,9 +25,11 @@ public class SelectionSort {
                     index = j;
                 }
             }
-            int temp = arr[i];
-            arr[i] = arr[index];
-            arr[index] = temp;
+            if (index != i) {
+                int temp = arr[i];
+                arr[i] = arr[index];
+                arr[index] = temp;
+            }
         }
     }
 }
