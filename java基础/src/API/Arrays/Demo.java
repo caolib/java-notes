@@ -28,5 +28,8 @@ public class Demo {
         Arrays.sort(arr2, (s1, s2) -> s1.length() - s2.length());
 
         System.out.println(Arrays.toString(arr2));
+
+        System.out.println("123".hashCode());
+
     }
 }
