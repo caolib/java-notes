@@ -1,6 +1,6 @@
 package java基础.src.案例.普通案例;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class TestDemo {
 

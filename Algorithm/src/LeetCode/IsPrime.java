@@ -1,8 +1,9 @@
 package Algorithm.src.LeetCode;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class IsPrime {
     public static void main(String[] args) {

@@ -21,5 +21,12 @@ public class Demo {
         Arrays.sort(arr);
         System.out.println("排序后：" + Arrays.toString(arr));
 
+        //引用类型进行排序
+        //根据字符串数组长度进行排序
+        String[] arr2 = {"aaaaa", "aaa", "aa", "aaaa", "a"};
+
+        Arrays.sort(arr2, (s1, s2) -> s1.length() - s2.length());
+
+        System.out.println(Arrays.toString(arr2));
     }
 }

@@ -1,6 +1,6 @@
 package java基础.src.案例.实验报告.实验六;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

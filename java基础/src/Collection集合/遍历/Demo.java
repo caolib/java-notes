@@ -14,7 +14,7 @@ import java.util.Iterator;
  */
 public class Demo {
     public static void main(String[] args) {
-        Collection<String> c = new ArrayList<String>();
+        Collection<String> c = new ArrayList<>();
         c.add("hello");
         c.add("world");
         c.add("java");
@@ -31,12 +31,22 @@ public class Demo {
 //            System.out.println(it.next());
 //        }
 
-        //while循环遍历Collection集合
+        //1.迭代器和列表迭代器遍历的时候都不能使用集合的方法增加或者删除元素，要使用迭代器添加或者删除，否则否发生并发修改异常
+        //2.迭代器中只能出现一次next()方法，否则可能出现元素不存在异常,因为next方法不仅会获取当前迭代器指向的元素还会将指针往后移动一位
+
+        //1.迭代器遍历Collection集合
         while (it.hasNext()) {
             String s = it.next();
             System.out.println(s);
         }
 
+        //2.增强for循环遍历集合
+        for (String s : c) {
+            System.out.println(s);
+        }
+
+        //3.lambda表达式遍历集合
+        c.forEach(s -> System.out.print(s + " "));
 
 
     }

@@ -1,6 +1,6 @@
 package Algorithm.src.基础数据结构.二分查找;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * 二分查找，如果找到就返回索引，没找到返回-1，数组必须是有序的

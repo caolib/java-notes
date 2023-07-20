@@ -1,15 +1,17 @@
 package Algorithm.src.排序算法;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Stack;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class QuickSortStackPro {
     public static void main(String[] args) {
         int[] arr = {5, 2, 9, 1, 7};
-        quick_sort(arr, 0, arr.length-1);
+        quick_sort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
 
 
@@ -64,6 +66,7 @@ public class QuickSortStackPro {
 
         return l;
     }
+
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
@@ -75,49 +78,55 @@ public class QuickSortStackPro {
         int[] arr = {5, 2, 9, 1, 7};
         int[] expected = {1, 2, 5, 7, 9};
         quick_sort(arr, 0, arr.length - 1);
-        Assert.assertArrayEquals(expected, arr);
+        assertArrayEquals(expected, arr);
     }
+
     @Test
     public void testPartition() {
         int[] arr = {5, 2, 9, 1, 7};
         int pivotIndex = partition(arr, 0, arr.length - 1);
-        Assert.assertEquals(2, pivotIndex);
-        Assert.assertEquals(1, arr[pivotIndex]);
+        assertEquals(2, pivotIndex);
+        assertEquals(1, arr[pivotIndex]);
     }
+
     @Test
     public void testSwap() {
         int[] arr = {5, 2, 9, 1, 7};
         swap(arr, 0, 4);
         int[] expected = {7, 2, 9, 1, 5};
-        Assert.assertArrayEquals(expected, arr);
+        assertArrayEquals(expected, arr);
     }
+
     @Test
     public void testQuickSortWithEmptyArray() {
         int[] arr = {};
         int[] expected = {};
         quick_sort(arr, 0, arr.length - 1);
-        Assert.assertArrayEquals(expected, arr);
+        assertArrayEquals(expected, arr);
     }
+
     @Test
     public void testQuickSortWithSingleElement() {
         int[] arr = {5};
         int[] expected = {5};
         quick_sort(arr, 0, arr.length - 1);
-        Assert.assertArrayEquals(expected, arr);
+        assertArrayEquals(expected, arr);
     }
+
     @Test
     public void testQuickSortWithDuplicateElements() {
         int[] arr = {5, 2, 9, 1, 7, 2, 5};
         int[] expected = {1, 2, 2, 5, 5, 7, 9};
         quick_sort(arr, 0, arr.length - 1);
-        Assert.assertArrayEquals(expected, arr);
+        assertArrayEquals(expected, arr);
     }
+
     @Test
     public void testQuickSortWithDescendingOrder() {
         int[] arr = {9, 7, 5, 3, 1};
         int[] expected = {1, 3, 5, 7, 9};
         quick_sort(arr, 0, arr.length - 1);
-        Assert.assertArrayEquals(expected, arr);
+        assertArrayEquals(expected, arr);
     }
 
 
