@@ -12,7 +12,7 @@ import java.util.LinkedList;
  */
 public class List集合子类特点 {
     public static void main(String[] args) {
-        ArrayList<String> arr = new ArrayList<String>();
+        ArrayList<String> arr = new ArrayList<>();
         arr.add("hello");
         arr.add("world");
         arr.add("java");
@@ -23,7 +23,7 @@ public class List集合子类特点 {
         System.out.println("----------");
 
         //LinkedList底层数据结构是链表
-        LinkedList<String> linkedlist = new LinkedList<String>();
+        LinkedList<String> linkedlist = new LinkedList<>();
         linkedlist.add("hello");
         linkedlist.add("world");
         linkedlist.add("java");
