@@ -1,19 +1,29 @@
 package javaSE.src.API.Stream;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
  * 1.stream()     获取流对象
- * 2.filter(...)  过滤，参数为过滤规则(可以使用lambda表达式实现，返回值为boolean,false->被过滤)
- * 3.limit(i)     获取前i个元素
- * 4.skip(i)      跳过前i个元素
- * 5.distinct()   去除重复元素
- * 6.concat(a,b)  合并两个流为一个新的流，两个流的数据类型最好一致，否则新流数据类型变为ab共同父类类型
- * 7.map(func)    数据类型转换
+ * <p>
+ * 中间方法：使用后返回的对象还是Stream，可以多次使用，可链式编程
+ * <ul>
+ *     <li>2.filter(...)  过滤，参数为过滤规则(可以使用lambda表达式实现，返回值为boolean,false->被过滤)</li>
+ *     <li>3.limit(i)     获取前i个元素</li>
+ *     <li>4.skip(i)      跳过前i个元素</li>
+ *     <li>5.distinct()   去除重复元素</li>
+ *     <li>6.concat(a,b)  合并两个流为一个新的流，ab二流的类型最好一致，否则新流数据类型变为ab共同父类类型</li>
+ *     <li>7.map(func)    数据类型转换</li>
+ * </ul>
+ * <p>
+ * 终结方法：使用后返回值不是Stream，不能再使用中间方法
+ * <ul>
+ *     <li>8.forEach()    遍历流中所有数据</li>
+ *     <li>9.count()      统计流中数据个数</li>
+ *     <li>10.toArray(..) 收集数据返回数组</li>
+ *     <li>11.collect()   收集数据返回集合</li>
+ * </ul>
  */
 
 public class StreamDemo {
@@ -89,6 +99,78 @@ public class StreamDemo {
         lst.stream()
                 .map(s -> Integer.parseInt(s.split("-")[1]))
                 .forEach(System.out::println);
+
+        System.out.println("--------------->>> count <<<---------------");
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.stream(array).count());
+
+        System.out.println("--------------->>> toArray <<<---------------");
+        ArrayList<String> arrayList = new ArrayList<>();
+        Collections.addAll(arrayList, "ikun", "kunkun", "张三");
+        //toArray()无参时返回Object[]数组
+/*        Object[] tar = arrayList.stream().limit(2).toArray();
+        System.out.println(Arrays.toString(tar));*/
+
+        //IntFunction的泛型：具体类型的数组
+        //apply形参：数据个数
+        //apply返回值：流数据数组
+        /*String[] target = arrayList.stream().limit(2).toArray(new IntFunction<String[]>() {
+            @Override
+            public String[] apply(int value) {
+                return new String[value];
+            }
+        });
+        System.out.println(Arrays.toString(target));*/
+
+        //lambda表达式实现
+        String[] target2 = arrayList.stream()
+                .limit(2)
+                .toArray(value -> new String[value]);
+        System.out.println(Arrays.toString(target2));
+
+
+        System.out.println("--------------->>> collect <<<---------------");
+        ArrayList<String> l = new ArrayList<>();
+        Collections.addAll(l, "张三-男-20", "李四-男-40", "kun-女-25", "ikun-男-69");
+
+        //收集到List集合中(男)
+        List<String> tarList = l.stream().
+                filter(o -> "男".equals(o.split("-")[1]))
+                .collect(Collectors.toList());
+        System.out.println("tarList = " + tarList);
+
+        //收集到Set集合中(男)
+        Set<String> tarSet = l.stream()
+                .filter(o -> "男".equals(o.split("-")[1]))
+                .collect(Collectors.toSet());
+        System.out.println("tarSet = " + tarSet);
+
+        //收集到Map中(男作为键，符合的数据作为值)
+        //注意键不能重复，否则报错
+        /*Map<String, Integer> tarMap = l.stream()
+                .filter(o -> "男".equals(o.split("-")[1]))
+                .collect(Collectors.toMap(new Function<String, String>() {
+                    @Override
+                    public String apply(String s) {
+                        //返回姓名作为键
+                        return s.split("-")[0];
+                    }
+                }, new Function<String, Integer>() {
+                    @Override
+                    public Integer apply(String s) {
+                        //返回年龄作为值
+                        return Integer.parseInt(s.split("-")[2]);
+                    }
+                }));
+        System.out.println("tarMap = " + tarMap);*/
+        //lamda表达式实现
+        Map<String, Integer> tarMap = l.stream()
+                .filter(o -> "男".equals(o.split("-")[1]))
+                .collect(Collectors.toMap(
+                        s -> s.split("-")[0],//键
+                        s -> Integer.parseInt(s.split("-")[2])));//值
+        System.out.println("tarMap = " + tarMap);
 
     }
 }
