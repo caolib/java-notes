@@ -1,4 +1,4 @@
-package javaSE.src.List集合概述和特点;
+package javaSE.src.API.List集合概述和特点;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -17,18 +17,8 @@ public class HashMap常用方法 {
         }
 
         System.out.println("--------------->>> 2 <<<---------------");
-      /*  //2.遍历方法:迭代器遍历，entrySet()将HashMap转化成Set对象，这样才能使用迭代器
-        //2.1迭代器遍历可以直接修改或者删除（remove）HashMap中的映射，因为是线程安全的
-        System.out.println("迭代器遍历:");
-        Iterator<Map.Entry<Character, Integer>> it = hashMap.entrySet().iterator();
-        while (it.hasNext()) {
-            //这里的map对象就是hashmap中的每个对象
-            Map.Entry<Character, Integer> map = it.next();
-            System.out.print(map.toString() + " ");
-        }
-        System.out.println();*/
 
-        //2.2增强for循环遍历,只能读取或修改value值，不能删除数据或修改key值，
+        //2.增强for循环遍历,只能读取或修改value值，不能删除数据或修改key值，
         //否则会出现 ConcurrentModificationException 异常
         System.out.println("for_each遍历:");
         for (Map.Entry<Character, Integer> e : hashMap.entrySet()) {
