@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GitToolBoxProjectSettings">
-<<<<<<< HEAD
     <option name="commitMessageIssueKeyValidationOverride">
-=======
-    <option name="autoFetchEnabledOverride">
->>>>>>> cee346886293e98f5c86ff0c55b99f5f077040e1
       <BoolValueOverride>
         <option name="enabled" value="true" />
       </BoolValueOverride>
     </option>
-<<<<<<< HEAD
     <option name="commitMessageValidationEnabledOverride">
-=======
-    <option name="autoFetchIntervalMinutesOverride">
-      <IntValueOverride>
-        <option name="enabled" value="true" />
-        <option name="value" value="15" />
-      </IntValueOverride>
-    </option>
-    <option name="autoFetchOnBranchSwitchOverride">
->>>>>>> cee346886293e98f5c86ff0c55b99f5f077040e1
       <BoolValueOverride>
         <option name="enabled" value="true" />
       </BoolValueOverride>
