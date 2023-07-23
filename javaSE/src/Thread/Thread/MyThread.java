@@ -1,4 +1,4 @@
-package javaSE.src.Thread.继承实现多线程;
+package javaSE.src.Thread.Thread;
 
 public class MyThread extends Thread {
     @Override
@@ -8,6 +8,11 @@ public class MyThread extends Thread {
             System.out.println(i);
         }
         System.out.println("线程执行结束----------");
+    }
+
+    @Override
+    public synchronized void start() {
+        super.start();
     }
 }
 

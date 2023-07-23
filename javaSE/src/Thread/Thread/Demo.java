@@ -1,4 +1,4 @@
-package javaSE.src.Thread.继承实现多线程;
+package javaSE.src.Thread.Thread;
 
 /*
     方式l:继承Thread类

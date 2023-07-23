@@ -14,7 +14,7 @@ public class ThreadJoinDemo {
         tj3.setName("八阿哥");
 
         tj1.start();
-        //tj1执行完后 tj2和tj3才开始执行并争夺cpu(康熙死后，他俩开始争夺王位)
+        //tj1执行完后 tj2和tj3才开始执行并争夺cpu
         try {
             tj1.join();
         } catch (InterruptedException e) {

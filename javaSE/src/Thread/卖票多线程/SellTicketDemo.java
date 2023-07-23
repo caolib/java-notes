@@ -1,8 +1,8 @@
-package javaSE.src.案例.线程.卖票多线程;
+package javaSE.src.Thread.卖票多线程;
 
 /*
     需求
-    某电影院目前正在上映国产大片，共有188张票，而它有3个窗口卖票，请设计一个程序模拟该电影院卖票
+    某电影院目前正在上映国产大片，共有100张票，而它有3个窗口卖票，请设计一个程序模拟该电影院卖票
     思路：
     1:定义一个类SellTicket实现Runnable接口，里面定义一个成员变量：private int tickets=100;
     2:在SellTicket类中重写run()方法实现卖票，代码步骤如下
@@ -28,7 +28,6 @@ public class SellTicketDemo {
         t1.start();
         t2.start();
         t3.start();
-
 
     }
 }
