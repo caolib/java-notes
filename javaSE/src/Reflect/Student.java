@@ -66,4 +66,8 @@ public class Student {
     public String toString() {
         return "Student{name = " + name + ", age = " + age + "}";
     }
+
+    private void fly() {
+        System.out.println("芜湖起飞");
+    }
 }

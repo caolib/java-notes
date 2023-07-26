@@ -3,6 +3,7 @@ package javaSE.src.Reflect;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 /**
@@ -64,6 +65,14 @@ public class ConstructorDemo {
         //修改属性的值
         name.set(s, "李四");
         System.out.println(s);
+
+        System.out.println("--------------->>> 获取成员方法 <<<---------------");
+//        Method[] methods = clazz.getMethods();//获取所有public成员方法包括父类中的方法
+//        Arrays.stream(methods).forEach(System.out::println);
+
+        Method[] declaredMethods = clazz.getDeclaredMethods();//获取所有成员方法，包括私有，但不包括父类中的方法
+        Arrays.stream(declaredMethods).forEach(System.out::println);
+
 
     }
 }
