@@ -38,7 +38,7 @@ public class SortTest {
     }
 
     /**
-     * <h1 color="#10ac84">冒泡排序Pro</h1>
+     * <h1 color="#10ac84">冒泡排序</h1>
      */
     public static int[] testBubbleSort(int[] arr) {
         long start = System.currentTimeMillis();
@@ -107,14 +107,14 @@ public class SortTest {
         int[] bubble = testBubbleSort(arr);
         int[] bubblePro = testBubbleSortPro(arr);
         int[] insert = testInsertSort(arr);
-//        int[] quick = testQuickSort(arr);
+        //int[] quick = testQuickSort(arr);
         int[] count = testCountSort(arr);
 
         assertArrayEquals(test, select);
         assertArrayEquals(test, bubble);
         assertArrayEquals(test, bubblePro);
         assertArrayEquals(test, insert);
-//        assertArrayEquals(test, quick);
+        //assertArrayEquals(test, quick);
         assertArrayEquals(test,count);
 
     }

@@ -43,8 +43,8 @@ public class CountSort {
         //定义一个长度为max+1的计数数组，确保待排序数组中所有数都能映射到此数组中
         int[] count = new int[max + 1];
         //遍历待排序数组进行计数
-        for (int i = 0; i < arr.length; i++) {
-            count[arr[i]]++;
+        for (int k : arr) {
+            count[k]++;
         }
 
         //通过计数数组构建有序序列
