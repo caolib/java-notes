@@ -1,2 +1,7 @@
 *.class
 *.ala
+*.iml
+
+
+*/lib
+*/out
