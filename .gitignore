@@ -1,7 +1,16 @@
 *.class
 *.ala
 *.iml
+*.jar
 
 
 */lib
 */out
+
+./javaSE/images/
+
+
+.idea/
+
+desktop.ini
+qodana.yaml
